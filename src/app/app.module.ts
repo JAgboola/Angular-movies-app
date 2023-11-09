@@ -13,6 +13,9 @@ import { NotAuthorizedComponent } from './components/not-authorized/not-authoriz
 import { SearchComponent } from './components/search/search.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { ProfitPipe } from './pipes/profit.pipe';
+import { FormsModule } from '@angular/forms';
+import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
 
 
 @NgModule({
@@ -27,10 +30,15 @@ import { LoaderComponent } from './components/loader/loader.component';
     ModalComponent,
     LoaderComponent,
     DetailsMoviesComponent,
-    DetailsComponent    
+    DetailsComponent,
+    
+    //Pipes
+    ProfitPipe,
+         DetailsActorsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
