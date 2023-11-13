@@ -8,7 +8,8 @@
         src="https://www.youtube.com/embed/QBkA5_DaasQ?si=jVM9l755K7dK95FT" 
         title="YouTube video player" 
         frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
     </div>
     <div class="col-md-6">
         <p class="lead">This is going to be a placeholder for the movie plot</p>
@@ -62,6 +63,10 @@
         
     </div>
 
+    <p class="text-center">
+        <a class="btn btn-warning" [routerLink]="['/details/actors', movieId]"> View more </a>
+    </p>
+
 </div>
 <hr>
 <br>
@@ -76,6 +81,10 @@
         
     </div>
 
+    <div class="text-center">
+        <a class="btn btn-warning"  [routerLink]="['/details/reviews', movieId]"> View more </a>
+    </div>
+
 </div>
 <hr>
 <br>
@@ -84,11 +93,12 @@
     <h1>Similar Movies</h1>
     <br>
 
-    <div class="col-md-12">
+    <div class="col-md-12 text-center">
         <app-details-movies></app-details-movies>
-
-        
     </div>
 
+    <div class="text-center">
+        <a class="btn btn-warning"  [routerLink]="['/details/movies', movieId]"> View more </a>
+    </div>
 </div>
 <br>
