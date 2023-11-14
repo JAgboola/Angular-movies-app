@@ -9,15 +9,15 @@ import { ActivatedRoute } from '@angular/router';
 
 export class DetailsComponent implements OnInit, OnChanges, AfterContentInit, AfterViewInit {
 
-  movieId = '';
+  public id = '';
 
   constructor(private _activatedRoute: ActivatedRoute) 
   { 
-    this._activatedRoute.params.subscribe((parameters) => 
+    this._activatedRoute.paramMap.subscribe((parameters) => 
     {
-      this.movieId = parameters["id"];
+      //this.movieId = parameters["id"];
 
-      console.log('Movie Id = ' + this.movieId);
+      console.log('Movie Id:', parameters.get("id"));
     })
   }
   

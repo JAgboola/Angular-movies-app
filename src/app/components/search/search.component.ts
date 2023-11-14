@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchComponent {
 
-  movieTitle = "";
+  public movieTitle = "";
 
   constructor(private _activatedRoute: ActivatedRoute) 
   {
